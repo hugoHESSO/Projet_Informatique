@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.projet_informatique.HelloController">
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_informatique.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <Accordion prefHeight="380.0" prefWidth="600.0">
+     <panes>
+       <TitledPane animated="false" text="task 1">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <Button layoutX="273.0" layoutY="139.0" mnemonicParsing="false" text="Button" />
+                     <Button layoutX="131.0" layoutY="139.0" mnemonicParsing="false" text="Button" />
+                     <Button layoutX="447.0" layoutY="139.0" mnemonicParsing="false" text="Button" />
+                     <Label layoutX="285.0" layoutY="41.0" text="I can set the text color via the radio" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </TitledPane>
+       <TitledPane animated="false" text="task 2">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <Button layoutX="273.0" layoutY="139.0" mnemonicParsing="false" text="image change" />
+                     <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </TitledPane>
+       <TitledPane animated="false" text="task 3">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+       </TitledPane>
+     </panes>
+   </Accordion>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="welcomeText" />
 </VBox>
